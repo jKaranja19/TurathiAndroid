@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.splashscreen">
-
-<!--    to connect to api-->
+    <!-- to connect to api -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -17,6 +16,9 @@
         android:theme="@style/Theme.SplashScreen"
         tools:targetApi="31">
         <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -25,13 +27,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SplashScreen.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.SplashScreen.NoActionBar"></activity>
     </application>
 
 </manifest>

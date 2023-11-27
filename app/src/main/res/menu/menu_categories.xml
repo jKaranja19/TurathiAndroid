@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.splashscreen.MainActivity">
     <item
+        android:id="@+id/home"
         android:orderInCategory="100"
         android:title="Back to Home"
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/report"
         android:orderInCategory="100"
         android:title="Report a language unavailable"
         app:showAsAction="never" />

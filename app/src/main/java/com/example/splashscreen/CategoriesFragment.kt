@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.splashscreen.databinding.FragmentCategoriesBinding
 import com.example.splashscreen.databinding.FragmentFirstBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -17,8 +18,8 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class CategoriesFragment : Fragment() {
-
-    private var _binding: FragmentFirstBinding? = null
+//changed from FragmentFirstBinding
+    private var _binding: FragmentCategoriesBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -29,7 +30,7 @@ class CategoriesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = FragmentCategoriesBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -37,13 +38,13 @@ class CategoriesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.button_kikuyu.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+//        binding.cat1.setOnClickListener {
+//            findNavController().navigate(R.id.action_CategoriesFragment_to_LingosFragment)
 //        }
 
-        binding.button3.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
-        }
+//        binding.button3.setOnClickListener {
+//            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
+//        }
     }
 
 //    //for the menu bar on the categories page
@@ -58,7 +59,12 @@ class CategoriesFragment : Fragment() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.home -> true
+            else -> super.onOptionsItemSelected(item)
+        }
+
+        return when (item.itemId) {
+            R.id.report -> true
             else -> super.onOptionsItemSelected(item)
         }
     }

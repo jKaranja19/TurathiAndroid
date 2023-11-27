@@ -11,19 +11,24 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
-<!--        <action-->
-<!--            android:id="@+id/action_FirstFragment_to_SecondFragment"-->
-<!--            app:destination="@id/SecondFragment" />-->
+<!--        first fragment to lingos fragment-->
+        <action
+            android:id="@+id/action_FirstFragment_to_LingosFragment"
+            app:destination="@id/LingosFragment" />
 
 <!--        FIRST FRAGMENT TO CATEGORIES-->
-<!--        <action-->
-<!--            android:id="@+id/action_FirstFragment_to_CategoriesFragment"-->
-<!--            app:destination="@id/" />-->
-<!--        -->
 
         <action
-            android:id="@+id/action_FirstFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            android:id="@+id/action_FirstFragment_to_CategoriesFragment"
+            app:destination="@id/CategoriesFragment" />
+
+        <!--        FIRST FRAGMENT TO second fragment-->
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -50,5 +55,29 @@
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/LingosFragment"
+        android:name="com.example.splashscreen.LingosFragment"
+        android:label="Lingos Fragment"
+        tools:layout="@layout/fragment_lingos">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CategoriesFragment"
+        android:name="com.example.splashscreen.CategoriesFragment"
+        android:label="Categories Fragment"
+        tools:layout="@layout/fragment_categories">
+
+        <!--    categories back to lingos-->
+        <action
+            android:id="@+id/action_CategoriesFragment_to_LingosFragment"
+            app:destination="@id/LingosFragment" />
     </fragment>
 </navigation>

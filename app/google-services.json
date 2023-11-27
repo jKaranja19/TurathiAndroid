@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "691772729723",
+    "firebase_url": "https://etymos-6a18e-default-rtdb.firebaseio.com",
+    "project_id": "etymos-6a18e",
+    "storage_bucket": "etymos-6a18e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691772729723:android:dc639e714727ad8cd4f5de",
+        "android_client_info": {
+          "package_name": "com.example.etymos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691772729723-4luv4crvuuvq36t4d7qrurm7ok306rq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdpG352P1ShMgwiEPFlIl9cISM_gSBAK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691772729723-4luv4crvuuvq36t4d7qrurm7ok306rq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691772729723:android:72ec5abecc419fbed4f5de",
+        "android_client_info": {
+          "package_name": "com.example.splashscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691772729723-4luv4crvuuvq36t4d7qrurm7ok306rq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdpG352P1ShMgwiEPFlIl9cISM_gSBAK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691772729723-4luv4crvuuvq36t4d7qrurm7ok306rq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
