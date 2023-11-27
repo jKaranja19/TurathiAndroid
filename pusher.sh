@@ -17,7 +17,7 @@ cd "$(dirname "$0")"
 # Add all changes to the Git staging area
 git add .
 
-git status 
+git status
 
 # Commit the changes with a descriptive message
 # git commit -m "added more words for Nov 13 (Kenyan tree planting) challenge"
