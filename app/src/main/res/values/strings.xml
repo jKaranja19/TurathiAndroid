@@ -10,6 +10,16 @@
     <string name="text">testing string</string>
     <string name="previous">Go To the First Fragment</string>
 
+    <string name="lingo1">Somali</string>
+    <string name="lingo2">Kikuyu</string>
+    <string name="lingo3">Dholuo</string>
+
+    <string name="category1">Foods</string>
+    <string name="category2">Greetings</string>
+    <string name="category3">Occupations</string>
+
+
+
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
