@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LingosFragment">
 
@@ -12,9 +13,9 @@
         android:layout_height="match_parent"
         android:textAlignment="center"
         android:layout_marginTop="100dp"
-
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:fontFamily="@font/mario"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:text="Choose a Language to learn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,22 +25,21 @@
         />
 
     <Button
-        android:id="@+id/button_kikuyu"
+        android:id="@+id/buttonKikuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_margin="150dp"
         android:text="Kikuyu >"
-
         android:textColor="@color/black"
-        android:backgroundTint="@color/butt_yellow"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3" />
+         />
 
     <Button
-        android:id="@+id/button_dholuo"
+        android:id="@+id/buttonDholuo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -47,14 +47,14 @@
         android:layout_marginEnd="100dp"
         android:text="Dholuo >"
         android:textColor="@color/black"
-        android:backgroundTint="@color/butt_bronze"
+        android:backgroundTint="@color/bronze"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3" />
+         />
 
     <Button
-        android:id="@+id/button_somali"
+        android:id="@+id/buttonSomali"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Somali >"
@@ -64,6 +64,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3" />
+         />
 
 </FrameLayout>
+
+<!--    app:layout_constraintTop_toBottomOf=""-->
+<!--    android:background="@color/black"-->

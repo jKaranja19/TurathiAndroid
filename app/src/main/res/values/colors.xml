@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="heading_colors">#00ff00</color>
-    <color name="butt_yellow">#e7cf27</color>
-    <color name="butt_bronze">#c7a43c</color>
+    <color name="yellow">#e7cf27</color>
+    <color name="bronze">#c7a43c</color>
 
 
 

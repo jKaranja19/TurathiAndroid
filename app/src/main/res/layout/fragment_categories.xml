@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CategoriesFragment">
+
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAlignment="center"
         android:layout_marginTop="100dp"
-
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:fontFamily="@font/mario"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:text="Choose a Category"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,46 +25,48 @@
         />
 
     <Button
-        android:id="@+id/cat1"
+        android:id="@+id/buttonFoods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_margin="150dp"
         android:text="Foods >"
         android:textColor="@color/black"
-        android:backgroundTint="@color/butt_yellow"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
     <Button
-        android:id="@+id/cat2"
+        android:id="@+id/buttonGreetings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="100dp"
-        android:text="Occupations >"
+        android:text="Greetings >"
         android:textColor="@color/black"
-        android:backgroundTint="@color/butt_bronze"
+        android:backgroundTint="@color/bronze"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cat1" />
+        />
 
     <Button
-        android:id="@+id/cat3"
+        android:id="@+id/buttonOccupations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Greetings >"
+        android:text="Occupations >"
         android:textColor="@color/black"
         android:layout_marginTop="450dp"
         android:layout_marginStart="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cat2" />
+        />
 
+</FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    app:layout_constraintTop_toBottomOf=""-->
+    <!--    android:background="@color/black"-->

@@ -33,14 +33,14 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 //         first fragment to lingos fragment
-//        binding.button3.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_LingosFragment)
-//        }
+        binding.button1.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_LingosFragment)
+        }
 
         //         first fragment to categories fragment
-        binding.button1.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_CategoriesFragment)
-        }
+//        binding.button1.setOnClickListener {
+//            findNavController().navigate(R.id.action_FirstFragment_to_CategoriesFragment)
+//        }
 
         //         first fragment to second fragment
         binding.button2.setOnClickListener {

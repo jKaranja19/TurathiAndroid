@@ -62,8 +62,18 @@
     <fragment
         android:id="@+id/LingosFragment"
         android:name="com.example.splashscreen.LingosFragment"
-        android:label="Lingos Fragment"
+        android:label="@string/lingos_fragment_label"
         tools:layout="@layout/fragment_lingos">
+
+<!--        lingos to categories-->
+        <action
+            android:id="@+id/action_LingosFragment_to_CategoriesFragment"
+            app:destination="@id/CategoriesFragment" />
+
+        <!--        somali button to third-->
+        <action
+            android:id="@+id/action_LingosFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
 
 
     </fragment>
@@ -72,7 +82,7 @@
     <fragment
         android:id="@+id/CategoriesFragment"
         android:name="com.example.splashscreen.CategoriesFragment"
-        android:label="Categories Fragment"
+        android:label="@string/categories_fragment_label"
         tools:layout="@layout/fragment_categories">
 
         <!--    categories back to lingos-->
