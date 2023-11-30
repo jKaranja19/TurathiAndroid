@@ -6,6 +6,8 @@
     <string name="lingos_fragment_label">Our Languages</string>
     <string name="categories_fragment_label">Our Categories</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="game_fragment_label">Game</string>
+
     <string name="next">Go to the Second Page</string>
     <string name="text">testing string</string>
     <string name="previous">Go To the First Fragment</string>

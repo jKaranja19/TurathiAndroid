@@ -5,7 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.splashscreen.databinding.FragmentCategoriesBinding
-import com.example.splashscreen.databinding.FragmentFirstBinding
+import androidx.appcompat.app.AppCompatActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,9 +38,10 @@ class CategoriesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.cat1.setOnClickListener {
-//            findNavController().navigate(R.id.action_CategoriesFragment_to_LingosFragment)
-//        }
+        //testing- categories to game
+        binding.buttonFoods.setOnClickListener {
+            findNavController().navigate(R.id.action_CategoriesFragment_to_GameFragment)
+        }
 
 //        binding.button3.setOnClickListener {
 //            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
@@ -50,7 +51,8 @@ class CategoriesFragment : Fragment() {
 //    //for the menu bar on the categories page
 //    override fun onCreateOptionsMenu(menu: Menu): Boolean {
 //        // Inflate the menu; this adds items to the action bar if it is present.
-//        menuInflater.inflate(R.menu.menu_categories, menu)
+//
+//    menuInflater.inflate(R.menu.menu_categories, menu)
 //        return true
 //    }
 

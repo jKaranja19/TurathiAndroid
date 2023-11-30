@@ -89,5 +89,22 @@
         <action
             android:id="@+id/action_CategoriesFragment_to_LingosFragment"
             app:destination="@id/LingosFragment" />
+
+        <!--    categories to game (testing with buttonFoods)-->
+        <action
+            android:id="@+id/action_CategoriesFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
     </fragment>
+
+<!--    GAMES FRAGMENT-->
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.example.splashscreen.GameFragment"
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game">
+
+
+    </fragment>
+
 </navigation>

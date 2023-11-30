@@ -126,7 +126,11 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_settings -> {
+                // Navigate to the lingos fragment for now
+                findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_FirstFragment_to_LingosFragment)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
