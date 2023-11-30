@@ -10,7 +10,7 @@ class NetworkService {
     fun defineWord(word: String): String {
 
         //push this to local.properties
-        val apiKey = "nh1cb9m4yspcmwq687www9qn7j3ix3dmppv7a0ot4mn0bwr3v"
+        val apiKey = "YOUR API KEY"
 //        YOUR API KEY
         val trimmedWord = word.lowercase().trim()
 
