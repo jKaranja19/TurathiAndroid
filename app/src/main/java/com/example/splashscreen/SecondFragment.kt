@@ -14,35 +14,32 @@ import com.example.splashscreen.databinding.FragmentSecondBinding
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
+        // Access and set images and descriptions
+        binding.image1.setImageResource(R.drawable.muratina)
+        binding.img1lang1.text = "Description 1 in Language 1"
 
-        binding.button.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
-        }
+        // Repeat the above for Image 2, Image 3, and Image 4
+
+        binding.image2.setImageResource(R.drawable.githeri)
+        binding.img2lang1.text = "Description 2 in Language 2"
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+}
 }
