@@ -58,7 +58,9 @@ class ThirdFragment : Fragment() {
 //
 ////        setContentView(R.layout.your_layout_name) // replace with your actual layout name
 //
-//        switcher = findViewById(R.id.switcher) // replace with your actual switcher ID
+////        switcher = findViewById(R.id.switcher) // replace with your actual switcher ID
+//        switcher = binding.switcher
+//
 //
 //        // we used sharedpref to save mode if exit the app and go back again
 //        sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE)

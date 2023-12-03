@@ -41,7 +41,7 @@ class GameFragment : Fragment() {
 
             // Example: retrieve a word meaning request when a button is clicked
             view.findViewById<Button>(R.id.buttonMeaning).setOnClickListener {
-                val wordToSearch = "couscous"  // Replace with the word you want to search
+                val wordToSearch = "matatu"  // Replace with the word you want to search
                 val meaning = networkService.defineWord(wordToSearch)
 
                 // Update UI (assuming you have a TextView with id 'textView')
