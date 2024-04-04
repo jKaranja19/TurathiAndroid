@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.example.splashscreen.databinding.FragmentPangramBinding
 
@@ -13,7 +14,7 @@ class PangramFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var letterAssembly: String = ""
-    private var wordOfTheDay: String = "EXAMPLE"
+    private var wordOfTheDay: String = "EXAM"
     private var hint: String = "This is a hint for the word of the day"
 
     override fun onCreateView(
@@ -35,9 +36,17 @@ class PangramFragment : Fragment() {
         for (letter in letters) {
             val button = Button(requireContext())
             button.text = letter.toString()
+
+            val layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+            button.layoutParams = layoutParams
             // Add button to the layout
             binding.layoutLetterTiles.addView(button)
         }
+
+
 
         // Set up shuffle button
         binding.buttonShuffle.setOnClickListener {

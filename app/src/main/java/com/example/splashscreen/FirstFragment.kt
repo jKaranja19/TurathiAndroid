@@ -37,10 +37,12 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_LingosFragment)
         }
 
-        //         first fragment to categories fragment
-//        binding.button1.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_CategoriesFragment)
-//        }
+
+
+//                 first fragment to pangram fragment
+        binding.buttonPangram.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_PangramFragment)
+        }
 
         //         first fragment to second fragment
         binding.button2.setOnClickListener {

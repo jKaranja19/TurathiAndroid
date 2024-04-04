@@ -11,6 +11,8 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
+
+
 <!--        first fragment to lingos fragment-->
         <action
             android:id="@+id/action_FirstFragment_to_LingosFragment"
@@ -26,6 +28,11 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+
+        <!--        first fragment to lingos fragment-->
+        <action
+            android:id="@+id/action_FirstFragment_to_PangramFragment"
+            app:destination="@id/PangramFragment" />
 
 
 
@@ -107,9 +114,11 @@
 
     </fragment>
     <fragment
-        android:id="@+id/pangramFragment"
+        android:id="@+id/PangramFragment"
         android:name="com.example.splashscreen.PangramFragment"
         android:label="PangramFragment"
         tools:layout="@layout/fragment_pangram"/>
+
+
 
 </navigation>
