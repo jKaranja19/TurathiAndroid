@@ -106,5 +106,10 @@
 
 
     </fragment>
+    <fragment
+        android:id="@+id/pangramFragment"
+        android:name="com.example.splashscreen.PangramFragment"
+        android:label="PangramFragment"
+        tools:layout="@layout/fragment_pangram"/>
 
 </navigation>
